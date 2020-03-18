@@ -1,10 +1,10 @@
 {
   "name": "blobs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "svg blob generator",
   "author": "g-harel",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.ts",
   "types": "index.d.ts",
   "scripts": {
     "prepack": "npm run build",
