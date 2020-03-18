@@ -68,7 +68,7 @@ blobs.editable = (opt: BlobOptions): XmlElement => {
 
     const count = 3 + Math.floor(14 * opt.complexity);
     const angle = 360 / count;
-    const radius = opt.size / Math.E;
+    const radius = (opt.size / Math.E) * 1.4;
 
     const points: Point[] = [];
     for (let i = 0; i < count; i++) {
