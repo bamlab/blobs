@@ -27,7 +27,7 @@ export interface RenderOptions {
 // Renders a shape made up of the input points to an editable data structure
 // which can be rendered to svg.
 export const renderEditable = (p: Point[], opt: RenderOptions): XmlElement => {
-    const points = p.map((point) => interpolate(point, opt.height));
+    const points = p.map((point) => interpolate(point));
 
     // Compute guides from input point data.
     const handles: {x1: number; y1: number; x2: number; y2: number}[] = [];
