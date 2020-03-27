@@ -75,8 +75,8 @@ blobs.editable = (opt: BlobOptions): XmlElement => {
         const rand = 1 - 0.8 * opt.contrast * rgen();
 
         points.push({
-            x: Math.sin(rad(i * angle)) * radius * rand + opt.size / 2,
-            y: Math.cos(rad(i * angle)) * radius * rand + opt.size / 2,
+            x: Math.cos(rad(i * angle)) * radius * rand,
+            y: Math.sin(rad(i * angle)) * radius * rand,
         });
     }
 

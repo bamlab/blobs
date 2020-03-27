@@ -36,12 +36,12 @@ export interface SVGPoint {
 
 // Translates a point's [x,y] cartesian coordinates into values relative to the viewport.
 // Translates the angle from degrees to radians and moves the start angle a half rotation.
-export const interpolate = (point: Point, height: number): SVGPoint => {
+export const interpolate = (point: Point): SVGPoint => {
     const handles = point.handles || {angle: 0, out: 0, in: 0};
     handles.angle = Math.PI + rad(handles.angle);
     return {
         x: point.x,
-        y: height - point.y,
+        y: -point.y,
         handles,
     };
 };
